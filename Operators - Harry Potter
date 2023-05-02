@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=s.nextInt();
+        int num1=num%10;
+        int num2=num/1000;
+        System.out.println(Math.abs(num1 + num2));
+       
+    }
+}
