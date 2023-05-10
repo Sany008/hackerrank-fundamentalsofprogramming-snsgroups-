@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        int c=in.nextInt();
+        int d=in.nextInt();
+        float e=in.nextFloat();
+        float f=in.nextFloat();
+        
+        if(b>=2021 && d<=2 && c<=200000 && a>=18 && a<=21 && e>=60 && f>=80){
+            System.out.println("Eligible");
+        }else if (b>=2021 && d>2 && e>= 80 && f>=90 && c>=200000 && c<=250000 &&  a>=18 && a<=21){
+            System.out.println("Partially Eligible");
+        }else{
+            System.out.println("Not Eligible");
+        }
+        
+    }
+}
