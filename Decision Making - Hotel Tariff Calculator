@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        
+        int month = in.nextInt();
+        int roomRent = in.nextInt();
+        int numDays = in.nextInt();
+
+        
+        if (month < 1 || month > 12) {
+            System.out.println("Invalid Input");
+        } else {
+            
+            if ((month >= 4 && month <= 6) || (month >= 11 && month <= 12)) {
+                roomRent = (int) (roomRent * 1.2); 
+            }
+            int hotelTariff = roomRent * numDays;
+            System.out.println(hotelTariff);
+        }
+        
+        
+    }
+}
