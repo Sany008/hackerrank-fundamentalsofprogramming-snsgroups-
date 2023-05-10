@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int fs = sc.nextInt();
+        int fd = sc.nextInt();
+        int fc = sc.nextInt();
+        int ss = sc.nextInt();
+        int sd = sc.nextInt();
+        int sch = sc.nextInt();
+        int as = sc.nextInt();
+        int ad = sc.nextInt();
+        int ac = sc.nextInt();
+        double disf=(fs*((100-fd))/100)+fc;
+        double diss=(ss*((100-sd))/100)+sch;
+        double disa=(as*((100-ad))/100)+ac;
+        System.out.println("In Flipkart: Rs."+(int)disf);
+        System.out.println("In Snapdeal: Rs."+(int)diss);
+        System.out.println("In Amazon: Rs."+(int)disa);
+        if (disf<=diss && disf<=disa){
+            System.out.println("Choose Flipkart");
+        }
+        if (diss<disf && diss<disa){
+            System.out.println("Choose Snapdeal");
+        }
+        if(disa<diss && disa<disf){
+            System.out.println("Choose Amazon");
+        }
+    }
+}
