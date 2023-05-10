@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double amt = sc.nextDouble();
+        double r = sc.nextDouble();
+        double n = sc.nextDouble();
+        double s = ((amt*r*n)/100);
+        double d = (s*0.02);
+        double p = amt+s;
+        System.out.printf("%.2f\n", s);
+        System.out.printf("%.2f\n", p);
+        System.out.printf("%.2f\n", d);
+        System.out.printf("%.2f\n", p-d);
+        
+    }
+}
