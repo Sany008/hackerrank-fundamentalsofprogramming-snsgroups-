@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int totovr=a/6;
+        int crtovr=d/6;
+        double ballsincrtovr=d%6;
+        double crtovrdec = crtovr+(ballsincrtovr/10);
+        double crr = c/crtovrdec;
+        double trr = b/(totovr+(a%6)/10.0);
+        if(crr>trr){
+            System.out.println(totovr);
+            System.out.printf("%.1f\n",crtovrdec);
+            System.out.printf("%.1f\n",crr);
+            System.out.printf("%.1f\n",trr);
+            System.out.println("Eligible to Win");
+        }
+        else{
+            System.out.println(totovr);
+            System.out.printf("%.1f\n",crtovrdec);
+            System.out.printf("%.1f\n",crr);
+            System.out.printf("%.1f\n",trr);
+            System.out.println("Not Eligible to Win");
+        }
+    }
+}
